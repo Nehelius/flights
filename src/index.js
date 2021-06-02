@@ -27,8 +27,8 @@ var map = new Map({
   target: 'map',
   view: new View({
    projection: 'EPSG:4326', //force here
-   center: [0, 0],
-   zoom: 2
+   center: [-8.224454, 39.399872],
+   zoom: 4
   })
  });
 
@@ -96,11 +96,21 @@ const HelloWorld = () => {
   return (
     <div>
       { selected ?
-          <div>
-            <div>Flight Number: {selected.flightNumber}</div>
-            <div>Latitude: {selected.latitude}</div>
-            <div>Longitude: {selected.longitude}</div>
-            <div>Time Stamp: {selected.timeStamp}</div>
+          <div className="flight-info-modal">
+            <div><strong>Flight Number:</strong> {selected.flightNumber}</div>
+            <div><strong>Latitude:</strong> {selected.latitude}</div>
+            <div><strong>Longitude:</strong> {selected.longitude}</div>
+            <div><strong>Timestamp:</strong> {selected.timeStamp}</div>
+            <div><strong>Altitude:</strong> {selected.altitude}</div>
+            <div><strong>Aircraft Model:</strong> {selected.aircraftModel}</div>
+            <div><strong>Ground Speed:</strong> {selected.groundSpeed}</div>
+            <div><strong>Heading:</strong> {selected.heading}</div>
+            <div><strong>Source:</strong> {selected.source}</div>
+            <div><strong>Registration:</strong> {selected.registration}</div>
+            <div><strong>Departure Airport ICAO:</strong> {selected.departureAirportICAO}</div>
+            <div><strong>Arrival Airport ICAO:</strong> {selected.arrivalAirportICAO}</div>
+            <div><strong>Airline:</strong> {selected.airline}</div>
+            <div><strong>Vertical Speed:</strong> {selected.verticalSpeed}</div>
           </div> :
           null }
     </div>

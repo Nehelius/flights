@@ -1,0 +1,42 @@
+.flight-info-modal {
+  color: rgb(123, 177, 193);
+  background-color: white;
+  width: 15em;
+  height: 25%;
+  overflow: scroll;
+  box-sizing: border-box;
+  padding: 0.5em;
+  margin-left: 0;
+  margin-right: auto;
+  border: 5px solid rgb(170, 211, 223);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flight-info-modal div:not(:last-child) {
+  margin-bottom: 0.2em;
+}
+
+.map {
+  /*   border: 5px solid rgb(123, 177, 193); */
+  box-sizing: border-box;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 639px) {
+  .flight-info-modal {
+    width: 100vw;
+    transform: translateY(100%);
+  }
+}
