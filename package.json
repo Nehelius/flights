@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "dev": "webpack --mode=development --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
+    "ol": "^6.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
