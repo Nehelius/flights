@@ -1,14 +1,13 @@
 .flight-info-modal {
   color: rgb(123, 177, 193);
   background-color: white;
-  width: 15em;
-  height: 25%;
-  overflow: scroll;
+  width: 20em;
+  height: auto;
   box-sizing: border-box;
   padding: 0.5em;
   margin-left: 0;
   margin-right: auto;
-  border: 5px solid rgb(170, 211, 223);
+  border: 5px solid rgb(123, 177, 193);
   position: absolute;
   left: 0;
   right: 0;
@@ -20,12 +19,10 @@
 }
 
 .flight-info-modal div:not(:last-child) {
-  margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
 }
 
 .map {
-  /*   border: 5px solid rgb(123, 177, 193); */
-  box-sizing: border-box;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -37,6 +34,12 @@
 @media only screen and (max-width: 639px) {
   .flight-info-modal {
     width: 100vw;
+    height: 25%;
     transform: translateY(100%);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    overflow: scroll;
+    font-size: 1.2em;
   }
 }

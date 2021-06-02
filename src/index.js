@@ -100,7 +100,7 @@ const HelloWorld = () => {
             <div><strong>Flight Number:</strong> {selected.flightNumber}</div>
             <div><strong>Latitude:</strong> {selected.latitude}</div>
             <div><strong>Longitude:</strong> {selected.longitude}</div>
-            <div><strong>Timestamp:</strong> {selected.timeStamp}</div>
+            <div><strong>Timestamp:</strong> {selected.timeStamp} ({new Date(selected.timeStamp).toLocaleDateString('en-GB')}, {new Date(selected.timeStamp).toLocaleTimeString('en-GB')} UTC+0)</div>
             <div><strong>Altitude:</strong> {selected.altitude}</div>
             <div><strong>Aircraft Model:</strong> {selected.aircraftModel}</div>
             <div><strong>Ground Speed:</strong> {selected.groundSpeed}</div>
